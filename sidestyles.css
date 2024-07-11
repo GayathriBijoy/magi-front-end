@@ -1,0 +1,72 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    background-color: #f3e8ff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #6e005a;
+    text-align: center;
+}
+
+.steps {
+    margin-top: 20px;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #b1a5b8;
+}
+
+.step .circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #d3c2e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: #6e005a;
+}
+
+.step.active .circle {
+    background-color: #6e005a;
+    color: white;
+}
+
+.step.active .text {
+    color: #6e005a;
+}
+
+.resizer {
+    width: 10px;
+    height: 100%;
+    background: #d3c2e3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: ew-resize;
+}
+
+.content {
+    flex-grow: 1;
+    background: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+}
